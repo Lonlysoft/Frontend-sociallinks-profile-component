@@ -1,0 +1,84 @@
+:root{
+	--font-color2: hsl(75, 94%, 57%);
+	--bg-color: hsl(0, 0%, 8%);
+	--font-color: hsl(0, 0%, 100%);
+	--unit-bg: hsl(0, 0%, 12%);
+	--button-color: hsl(0, 0%, 20%);
+}
+
+@font-face{
+	font-family: "inter";
+	src: local("Inter Regular"), url("assets/fonts/static/Inter-Regular.ttf")format('truetype');
+}
+@font-face{
+	font-family: "inter bold";
+	src: local("Inter Bold"), url("assets/fonts/static/Inter-Bold.ttf")format('truetype');
+}
+@font-face{
+	font-family: "inter semiBold";
+	src: local("Inter semiBold"), url("assets/fonts/static/Inter-semiBold.ttf")format('truetype');
+}
+
+body{
+	margin: 0;
+	width: 100vw;
+	height: 100dvh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: var(--bg-color);
+	color: var(--font-color);
+	font-family: "Inter", sans-serif;
+}
+
+.unit{
+	width: 300px;
+	background-color: var(--unit-bg);
+	padding: 1.5em;
+	border-radius: 1em;
+}
+
+main img{
+	border-radius: 50%;
+	width: 5em;
+}
+
+.bio{
+	margin-bottom: 1em;
+	font-size: 14px;
+}
+
+.where{
+	color: var(--font-color2);
+	margin-bottom: 2em;
+	font-family: "Inter semiBold", sans-serif;
+}
+
+.name{
+	margin-bottom: 0.25em;
+	font-size: 1.7em
+}
+
+nav{
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	flex-direction: column;
+}
+
+nav a{
+	text-decoration: none;
+	color: var(--font-color);
+	background-color: var(--button-color);
+	margin: 0.5em;
+	padding: 1em 0;
+	width: 100%;
+	border-radius: 8px;
+	font-family: "Inter Bold", sans-serif;
+}
+
+nav a:hover{
+	color: var(--button-color);
+	background-color: var(--font-color2);
+}
